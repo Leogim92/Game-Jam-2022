@@ -1436,5 +1436,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7093711134086329706, guid: 163ff26ccd9db234e927accced5d24cb, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 163ff26ccd9db234e927accced5d24cb, type: 3}
