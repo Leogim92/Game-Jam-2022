@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 1842346430827122463}
   - component: {fileID: 8968159017627328755}
   m_Layer: 5
-  m_Name: Bio
+  m_Name: PlayerBio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

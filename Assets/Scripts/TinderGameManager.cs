@@ -17,8 +17,11 @@ public class TinderGameManager : MonoBehaviour
 
     [Space, Header("Swipe Game"), Space]
     [SerializeField] Transform swipeGameMenu = null;
+    [SerializeField] Transform characterPanel = null;
+    [SerializeField] CharacterBioUI characterBioPrefab = null;
     [SerializeField] List<AIBio> possibleCandidates = null;
 
+    List<GameObject> candidates = new List<GameObject>();
     private void Start()
     {
         UIBio.OnBioSelected += SetSelectedBio;
@@ -64,6 +67,30 @@ public class TinderGameManager : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         swipeGameMenu.gameObject.SetActive(true);
+        PopulatePossibleCandidates();
+        yield return new WaitUntil(() => MatchIsResolved());
     }
+
+    private void PopulatePossibleCandidates()
+    {
+        foreach (Transform item in characterPanel.transform)
+        {
+            Destroy(item.gameObject);
+        }
+        foreach (AIBio bio in possibleCandidates)
+        {
+            CharacterBioUI newBio = Instantiate(characterBioPrefab, characterPanel);
+            newBio.Setup(bio);
+            newBio.gameObject.SetActive(false);
+            candidates.Add(newBio.gameObject);
+        }
+    }
+
+    private bool MatchIsResolved()
+    {
+        return false;
+    }
+
+
     #endregion
 }

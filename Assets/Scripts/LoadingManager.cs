@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoadingManager : MonoBehaviour
@@ -25,14 +26,34 @@ public class LoadingManager : MonoBehaviour
     }
     public static IEnumerator FadeIn()
     {
-        FadeLoader.SetTrigger("FadeIn");
+        FadeLoader.SetBool("Fade", false);
         yield return new WaitForEndOfFrame();
         yield return new WaitForSeconds(2f);
     }
     public static IEnumerator FadeOut()
     {
-        FadeLoader.SetTrigger("FadeOut");
+        FadeLoader.SetBool("Fade", true);
         yield return new WaitForEndOfFrame();
         yield return new WaitForSeconds(2f);
+    }
+
+    public static void LoadScene(string sceneToLoad)
+    {
+        loadingManager.StartCoroutine(LoadSceneAsync(sceneToLoad));
+    }
+    static IEnumerator LoadSceneAsync(string sceneToLoad)
+    {
+        yield return FadeOut();
+        AsyncOperation asyncScene = SceneManager.LoadSceneAsync(sceneToLoad);
+
+        asyncScene.allowSceneActivation = false;
+        while (!asyncScene.isDone)
+        {
+            if (asyncScene.progress >= 0.9f)
+            {
+                asyncScene.allowSceneActivation = true;
+            }
+            yield return new WaitForEndOfFrame();
+        }
     }
 }

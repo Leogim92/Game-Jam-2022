@@ -165,7 +165,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3207985656079786475, guid: de1fa70398a233d44b884e978ea28ac4, type: 3}
       propertyPath: m_text
-      value: He thinks himself badass.
+      value: You need to find yourself a hot chick.
       objectReference: {fileID: 0}
     - target: {fileID: 5286271217664629762, guid: de1fa70398a233d44b884e978ea28ac4, type: 3}
       propertyPath: m_AnchorMax.y
@@ -634,8 +634,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3207985656079786475, guid: de1fa70398a233d44b884e978ea28ac4, type: 3}
       propertyPath: m_text
-      value: However, he is farmed every week so he's pretty much irrelevant right
-        now.
+      value: Go ahead. Install digger and do it!
       objectReference: {fileID: 0}
     - target: {fileID: 5286271217664629762, guid: de1fa70398a233d44b884e978ea28ac4, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1080,6 +1079,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3460146555375135541, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460146555375135541, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460146555375135541, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3327.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460146555375135541, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1954.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460146555375135541, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1196
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460146555375135541, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 729
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460146555375135542, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc0e45036abcced4991de18c7edf6542, type: 3}
     - target: {fileID: 3460146555499950576, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1128,6 +1155,10 @@ PrefabInstance:
       propertyPath: fade
       value: 
       objectReference: {fileID: 853006044}
+    - target: {fileID: 3460146556843200900, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
+      propertyPath: sceneToLoad
+      value: TinderGameScene
+      objectReference: {fileID: 0}
     - target: {fileID: 3460146556843200901, guid: d132ceac1e02750499593ae4b0ab0d76, type: 3}
       propertyPath: m_SceneBindings.Array.size
       value: 4
@@ -1252,6 +1283,10 @@ PrefabInstance:
     - target: {fileID: 2121119550965871893, guid: de1fa70398a233d44b884e978ea28ac4, type: 3}
       propertyPath: m_Color.a
       value: 0.43137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 3207985656079786475, guid: de1fa70398a233d44b884e978ea28ac4, type: 3}
+      propertyPath: m_text
+      value: Hello. You seem lonely.
       objectReference: {fileID: 0}
     - target: {fileID: 5286271217664629762, guid: de1fa70398a233d44b884e978ea28ac4, type: 3}
       propertyPath: m_AnchorMax.y

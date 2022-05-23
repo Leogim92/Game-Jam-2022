@@ -5,6 +5,8 @@ using UnityEngine.Playables;
 [RequireComponent(typeof(PlayableDirector))]
 public class Cutscene : MonoBehaviour
 {
+    [SerializeField] string sceneToLoad = null;
+
     PlayableDirector cutscene;
 
     private void Awake()
@@ -20,10 +22,6 @@ public class Cutscene : MonoBehaviour
     }
     private void EndCutscene(PlayableDirector obj)
     {
-        StartCoroutine(CutsceneEnd());
-    }
-    IEnumerator CutsceneEnd()
-    {
-        yield return LoadingManager.FadeOut();
+        LoadingManager.LoadScene(sceneToLoad);
     }
 }
