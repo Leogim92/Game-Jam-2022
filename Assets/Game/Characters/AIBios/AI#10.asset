@@ -16,5 +16,5 @@ MonoBehaviour:
   causeOfDeath: Shot in the back
   characterDescription: Likes to order people around.
   photo: {fileID: -693293808, guid: 8b56cd01e9c1be248aa867ecfc503806, type: 3}
-  blacklistedBios:
-  - {fileID: 11400000, guid: a7b0a7ec96d4ee4418061cf2db6f0c3b, type: 2}
+  characterLikes: 
+  characterDislikes: 

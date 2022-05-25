@@ -16,5 +16,5 @@ MonoBehaviour:
   causeOfDeath: Keys
   characterDescription: This girl is on fire.
   photo: {fileID: -1918018192, guid: 8b56cd01e9c1be248aa867ecfc503806, type: 3}
-  blacklistedBios:
-  - {fileID: 11400000, guid: 5852565aced7d0a46bb6be2ab1e49b73, type: 2}
+  characterLikes: 
+  characterDislikes: 
