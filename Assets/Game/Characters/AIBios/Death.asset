@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fb1db0720161d449acb389ef77e8894, type: 3}
-  m_Name: AI#1
+  m_Name: Death
   m_EditorClassIdentifier: 
-  characterName: Murray
-  causeOfDeath: Chocolate
-  characterDescription: Chocolate Chip Lover
-  photo: {fileID: 680381147, guid: 8b56cd01e9c1be248aa867ecfc503806, type: 3}
+  characterName: Grim Reaper
+  causeOfDeath: 
+  characterDescription: 
+  photo: {fileID: 0}
   characterLikes: 
   characterDislikes: 
-  blacklistedBios:
-  - {fileID: 11400000, guid: 5852565aced7d0a46bb6be2ab1e49b73, type: 2}
+  dialogues:
+  - dialogueSegments:
+    - text: 
+      isPlayer: 0
