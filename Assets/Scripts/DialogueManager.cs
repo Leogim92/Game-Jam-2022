@@ -3,13 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
     enum GameState
     {
         Intro,
+        PosCharSelection,
         SpeedDating,
+        PreBossFight
     }
 
     [SerializeField] Transform dialogueBox = null;
@@ -19,8 +22,14 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] PlayerChoiceUI playerChoicePrefab = null;
     [Space]
     [Header("Intro")]
-    [SerializeField] Conversant deathConversant = null;
+    [SerializeField] Conversant deathConversantIntro = null;
+    [SerializeField] Conversant deathConversantAfterCharSelect = null;
     [SerializeField] Transform characterSelectionScreen = null;
+
+    [Space]
+    [Header("Speed Dating")]
+    [SerializeField] Transform dateSelectionScreen = null;
+
 
     GameState gameState;
     Conversant currentConversant;
@@ -32,7 +41,7 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         gameState = GameState.Intro;
-        currentConversant = deathConversant;
+        currentConversant = deathConversantIntro;
     }
 
     private void Start()
@@ -88,6 +97,29 @@ public class DialogueManager : MonoBehaviour
             dialogueBox.gameObject.SetActive(false);
             characterSelectionScreen.gameObject.SetActive(true);
         }
+        else if(gameState == GameState.PosCharSelection)
+        {
+            dialogueBox.gameObject.SetActive(false);
+            dateSelectionScreen.gameObject.SetActive(true);
+            gameState = GameState.SpeedDating;
+        }
+        else if(gameState == GameState.SpeedDating)
+        {
+            foreach (Button button in dateSelectionScreen.GetComponentsInChildren<Button>())
+            {
+                if (button.interactable)
+                {
+                    dialogueBox.gameObject.SetActive(false);
+                    dateSelectionScreen.gameObject.SetActive(true);
+                    return;
+                }
+            }
+            gameState = GameState.PreBossFight;
+        }
+        else if(gameState == GameState.PreBossFight)
+        {
+            Debug.Log("Implement death talk before boss fight");
+        }
     }
 
     private void UpdateDialogueText()
@@ -108,6 +140,23 @@ public class DialogueManager : MonoBehaviour
     }
     public void SelectCharacter()
     {
+        gameState = GameState.PosCharSelection;
+        currentConversant = deathConversantAfterCharSelect;
+        characterSelectionScreen.gameObject.SetActive(false);
+        dialogueBox.gameObject.SetActive(true);
 
+        currentDialogueIndex = 0;
+        currentDialogueSegmentIndex = 0;
+        UpdateDialogueText();
+    }
+    public void StartDate(Conversant newDate)
+    {
+        currentConversant = newDate;
+        dateSelectionScreen.gameObject.SetActive(false);
+        dialogueBox.gameObject.SetActive(true);
+
+        currentDialogueIndex = 0;
+        currentDialogueSegmentIndex = 0;
+        UpdateDialogueText();
     }
 }
