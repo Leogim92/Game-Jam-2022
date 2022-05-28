@@ -8,4 +8,13 @@ public class Conversant : MonoBehaviour
     [SerializeField] List<Dialogue> dialogues = null;
 
     public AIBio AIBio => aiBio;
+
+    public Dialogue GetDialogue(int index)
+    {
+        return dialogues[index];
+    }
+    public bool HasMoreDialogue(int index)
+    {
+        return dialogues.Count - 1 > index;
+    }
 }

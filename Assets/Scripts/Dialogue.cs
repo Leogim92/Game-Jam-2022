@@ -12,9 +12,17 @@ public class Dialogue
     }
 
     [SerializeField] List<DialogueSegment> dialogueSegments = null;
-
-    public IEnumerable<DialogueSegment> GetDialogueSegments()
+    [SerializeField] PlayerChoices playerChoices = null;
+    public DialogueSegment GetDialogueSegment(int index)
     {
-        return dialogueSegments;
+        return dialogueSegments[index];
+    }
+    public bool HasNextSegment(int currentSegmentIndex)
+    {
+        return dialogueSegments.Count - 1 > currentSegmentIndex;
+    }
+    public PlayerChoices GetPlayerChoices()
+    {
+        return playerChoices;
     }
 }
