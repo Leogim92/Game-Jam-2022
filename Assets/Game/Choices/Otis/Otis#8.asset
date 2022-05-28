@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Otis#8
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: Because it makes you want to shuffle into a meat grinder?
+    response: Pls stop. Verbal abuse makes me cry and then cum.
+    pontuationTarget: {fileID: 0}
+  choice2:
+    choice: I could see this playing at Coachella.
+    response: "Cheers! They have a sort of Coachella over here, but they ask you
+      to hand over your femurs before you get in. It\u2019s kinda sus."
+    pontuationTarget: {fileID: 0}
+  choice3:
+    choice: It is an exercise in ontological pointlessness.
+    response: Are you a dinosaur? Cuz you sound like a thesaurus haha, jk.
+    pontuationTarget: {fileID: 0}

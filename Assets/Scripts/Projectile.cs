@@ -24,7 +24,8 @@ public class Projectile : MonoBehaviour
     {
         if (collision.CompareTag(targetTag))
         {
-            if(collision.TryGetComponent(out IDamageable damageable))
+            IDamageable damageable = collision.GetComponentInParent<IDamageable>();
+            if(damageable != null)
             {
                 damageable.TakeDamage(damage);
                 Destroy(gameObject);

@@ -281,11 +281,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96668363}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1024.7662, y: 213.14386, z: 3.8501854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1060402033}
+  m_Father: {fileID: 487641634}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &96668365
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4538bd44f43d524baa41d797cef7a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHp: 100
+  bossHp: 300
   projectile: {fileID: 3124802560129434712, guid: 7310e745ce154ee41a74395a6461fed8, type: 3}
   upAttackPosition: {fileID: 1164522946}
   downAttackPosition: {fileID: 133977493}
@@ -944,7 +944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &430778335
 Transform:
   m_ObjectHideFlags: 0
@@ -1007,12 +1007,49 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430873407}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1024.7662, y: 213.14386, z: 3.8501854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 487641634}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &487641633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487641634}
+  m_Layer: 0
+  m_Name: Dialogues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487641634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487641633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1060402033}
-  m_RootOrder: 4
+  m_Children:
+  - {fileID: 96668364}
+  - {fileID: 1811308583}
+  - {fileID: 1626997626}
+  - {fileID: 1757311586}
+  - {fileID: 430873409}
+  - {fileID: 598169944}
+  - {fileID: 1443075282}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &508710757
 GameObject:
@@ -1661,7 +1698,95 @@ MonoBehaviour:
   aiBio: {fileID: 11400000, guid: ed1895a8ae454db43adc2cc7d72da635, type: 2}
   dialogues:
   - dialogueSegments:
-    - text: I'm Otis
+    - text: Dayum, if I knew I was meeting a hottie like you I would have cleaned
+        under my foreskin.
+      isPlayer: 0
+    playerChoices: {fileID: 11400000, guid: 199f0284ea0e89b43ba258c29953c9ba, type: 2}
+  - dialogueSegments:
+    - text: "Ohh you gotta try the eyeball slushies! They\u2019re d-e-l-i-s-i-o-u-s!"
+      isPlayer: 0
+    playerChoices: {fileID: 11400000, guid: 108a17b47726334418151cdf6486e005, type: 2}
+  - dialogueSegments:
+    - text: "But the food scene, bruuuh\u2026 They have these things here that grow
+        on the ground and if you eat them regularly your ass stops bleeding when
+        you poop? It\u2019s dope, man."
+      isPlayer: 0
+    - text: You mean vegetables?
+      isPlayer: 1
+    - text: Yeah! Have you tried them?
+      isPlayer: 0
+    - text: Yeah! Have you tried them?
+      isPlayer: 0
+    - text: Yes.
+      isPlayer: 1
+    - text: Hell yeah! Love me a foodie! When I was alive I only really ate chicken
+        nuggets and cocaine.
+      isPlayer: 0
+    - text: You remember your life?
+      isPlayer: 1
+    - text: Heh, bits and bits. I remember partying all the time. All over the world,
+        baby. Night till dawn, chicken nuggies and party cokey!
+      isPlayer: 0
+    - text: But it gets stale, you know?
+      isPlayer: 0
+    playerChoices: {fileID: 11400000, guid: 362541e0a9f1a234b836983222f9b4ea, type: 2}
+  - dialogueSegments:
+    - text: "Partying\u2026 It\u2019s like, you get gifted this body at birth, ya
+        know? And you get nerve endings and tactile sensation and hearing. And you
+        come into this playground of a world. You have warm breezes and, like, pretty
+        sunsets and stuff."
+      isPlayer: 0
+    - text: "And grass. Not like weed, tho that\u2019s cool too. Like green grass.
+        It\u2019s fluffy and it\u2019s got all these dope bugs and worms and stuff
+        living it. And moles! Ever seen a mole? They\u2019re cute af, mate, I\u2019m
+        telling ya."
+      isPlayer: 0
+    - text: You come into all this, but they never really teach you how to appreciate
+        it. Until you lose it.
+      isPlayer: 0
+    - text: They teach you to numb yourself up, you know. As if life is this boring
+        sequence of moments between the past and the future.
+      isPlayer: 0
+    - text: "And you waste it remembering the past and fantasising about the future,
+        instead of seeing the pretty sunsets or touching the grass, with all its
+        bugs and moles\u2026"
+      isPlayer: 0
+    - text: "I guess everything\u2019s got something numbing them down. For my buddy
+        Jimmy Slimey, it was League of Legends. For Todd Howard, it\u2019s beating
+        up children. For me, it was partying. I partied so hard it killed me when
+        I stopped."
+      isPlayer: 0
+    - text: What about you?
+      isPlayer: 0
+    - text: "I can\u2019t remember, but if I had to guess\u2026"
+      isPlayer: 1
+    playerChoices: {fileID: 11400000, guid: dbaca13e8e5e90d4da56cf91c3d1573c, type: 2}
+  - dialogueSegments:
+    - text: "Soz for the sappiness, I swear I\u2019m not the kind of guy who cries
+        after sex haha. Unless you\u2019re into that? Haha jk lmao. Are you tho?
+        It\u2019s cool if you are, rotfl\u2026"
+      isPlayer: 0
+    - text: "Lol I\u2019m being cringe\u2026 Hey what kind of music you into?"
+      isPlayer: 0
+    playerChoices: {fileID: 11400000, guid: 862f4691f51b48c4bbf40d19657afb6d, type: 2}
+  - dialogueSegments:
+    - text: "Have I told you I\u2019m a DJ? I even played at that new club last week,
+        the one with the arms coming out of the floor that punch you in the nuts
+        if you stop dancing. Wanna listen to my latest track?"
+      isPlayer: 0
+    playerChoices: {fileID: 11400000, guid: a9061c580b5478a4aa090f39fd3c2b5d, type: 2}
+  - dialogueSegments:
+    - text: (Play atrocious song)
+      isPlayer: 0
+    - text: So, what do you think?
+      isPlayer: 0
+    playerChoices: {fileID: 11400000, guid: faa973629cb2cb24eaf8be22e0aa22b5, type: 2}
+  - dialogueSegments:
+    - text: "I\u2019m calling the genre \u201CNecroshuffle\u201D."
+      isPlayer: 0
+    playerChoices: {fileID: 11400000, guid: faa973629cb2cb24eaf8be22e0aa22b5, type: 2}
+  - dialogueSegments:
+    - text: Rad!
       isPlayer: 0
     playerChoices: {fileID: 0}
 --- !u!4 &598169944
@@ -1671,11 +1796,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598169942}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1024.7662, y: 213.14386, z: 3.8501854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1060402033}
+  m_Father: {fileID: 487641634}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &614262009
@@ -3146,6 +3271,7 @@ MonoBehaviour:
   crouchCollider: {fileID: 1427309268}
   projectile: {fileID: 3124802560129434712, guid: 8a92d0b5979c2874199cb2bceacd7a81, type: 3}
   attackPosition: {fileID: 1999737259}
+  attackRate: 0.5
 --- !u!1 &1060402032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,14 +3299,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1024.7662, y: 213.14386, z: 3.8501854}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 96668364}
-  - {fileID: 1811308583}
-  - {fileID: 1626997626}
-  - {fileID: 1757311586}
-  - {fileID: 430873409}
-  - {fileID: 598169944}
-  - {fileID: 1443075282}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4269,11 +4388,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443075280}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1024.7662, y: 213.14386, z: 3.8501854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1060402033}
+  m_Father: {fileID: 487641634}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1464840476
@@ -4868,11 +4987,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626997624}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1024.7662, y: 213.14386, z: 3.8501854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1060402033}
+  m_Father: {fileID: 487641634}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1660054342
@@ -5056,11 +5175,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757311584}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1024.7662, y: 213.14386, z: 3.8501854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1060402033}
+  m_Father: {fileID: 487641634}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1791839951
@@ -5221,11 +5340,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811308582}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1024.7662, y: 213.14386, z: 3.8501854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1060402033}
+  m_Father: {fileID: 487641634}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1811308584
@@ -5740,7 +5859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1939994787
 MonoBehaviour:
   m_ObjectHideFlags: 0

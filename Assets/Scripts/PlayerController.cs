@@ -15,7 +15,10 @@ public class PlayerController : MonoBehaviour, IDamageable
     [Space]
     [SerializeField] Projectile projectile = null;
     [SerializeField] Transform attackPosition = null;
+    [SerializeField] float attackRate = 0.5f;
     Rigidbody2D rb;
+
+    float attackTimer;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -41,11 +44,17 @@ public class PlayerController : MonoBehaviour, IDamageable
             normalCollider.gameObject.SetActive(true);
             crouchCollider.gameObject.SetActive(false);
         }
-
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectile, attackPosition.position, Quaternion.identity);
+            if (attackTimer >= attackRate)
+            {
+                attackTimer = 0;
+                Instantiate(projectile, attackPosition.position, Quaternion.identity);
+            }
         }
+
+        attackTimer += Time.deltaTime;
+
     }
 
     private bool OnGround()
