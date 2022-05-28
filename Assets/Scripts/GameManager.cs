@@ -5,14 +5,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     enum GameState
     {
         Intro,
         PosCharSelection,
         SpeedDating,
-        PreBossFight
+        PreBossFight,
+        BossFight,
+        PosBossFight
     }
 
     [SerializeField] Transform dialogueBox = null;

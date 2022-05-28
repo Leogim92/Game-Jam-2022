@@ -10,6 +10,6 @@ public class DateChoiceUI : MonoBehaviour
     public void SelectDate()
     {
         GetComponentInChildren<Button>().interactable = false;
-        FindObjectOfType<DialogueManager>().StartDate(dateConversant);
+        FindObjectOfType<GameManager>().StartDate(dateConversant);
     }
 }

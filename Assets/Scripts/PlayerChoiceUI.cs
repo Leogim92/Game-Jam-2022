@@ -17,6 +17,6 @@ public class PlayerChoiceUI : MonoBehaviour
         {
             //Give pontuation
         }
-        FindObjectOfType<DialogueManager>().SetResponseText(choice.response);
+        FindObjectOfType<GameManager>().SetResponseText(choice.response);
     }
 }
