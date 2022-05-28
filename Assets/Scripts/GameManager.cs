@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
         Intro,
         PosCharSelection,
         SpeedDating,
+        DeathIntermission,
         PreBossFight,
         BossFight,
         PosBossFight
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
 
     GameState gameState;
     Conversant currentConversant;
+    Conversant deathIntermission;
 
     int currentDialogueIndex = 0;
     int currentDialogueSegmentIndex = 0;
@@ -94,18 +96,28 @@ public class GameManager : MonoBehaviour
 
     private void HandleEndConversation()
     {
-        if(gameState == GameState.Intro)
+        if (gameState == GameState.Intro)
         {
             dialogueBox.gameObject.SetActive(false);
             characterSelectionScreen.gameObject.SetActive(true);
         }
-        else if(gameState == GameState.PosCharSelection)
+        else if (gameState == GameState.PosCharSelection)
         {
             dialogueBox.gameObject.SetActive(false);
             dateSelectionScreen.gameObject.SetActive(true);
             gameState = GameState.SpeedDating;
         }
-        else if(gameState == GameState.SpeedDating)
+        else if (gameState == GameState.SpeedDating)
+        {
+            dialogueBox.gameObject.SetActive(false);
+            currentDialogueIndex = 0;
+            currentDialogueSegmentIndex = 0;
+            currentConversant = deathIntermission;
+            UpdateDialogueText();
+            StartCoroutine(DeathIntermission());
+            gameState = GameState.DeathIntermission;
+        }
+        else if (gameState == GameState.DeathIntermission)
         {
             foreach (Button button in dateSelectionScreen.GetComponentsInChildren<Button>())
             {
@@ -113,12 +125,13 @@ public class GameManager : MonoBehaviour
                 {
                     dialogueBox.gameObject.SetActive(false);
                     dateSelectionScreen.gameObject.SetActive(true);
+                    gameState = GameState.SpeedDating;
                     return;
                 }
             }
             gameState = GameState.PreBossFight;
         }
-        else if(gameState == GameState.PreBossFight)
+        else if (gameState == GameState.PreBossFight)
         {
             Debug.Log("Implement death talk before boss fight");
         }
@@ -151,14 +164,21 @@ public class GameManager : MonoBehaviour
         currentDialogueSegmentIndex = 0;
         UpdateDialogueText();
     }
-    public void StartDate(Conversant newDate)
+    public void StartDate(Conversant newDate, Conversant deathIntermission)
     {
         currentConversant = newDate;
+        this.deathIntermission = deathIntermission;
+
         dateSelectionScreen.gameObject.SetActive(false);
         dialogueBox.gameObject.SetActive(true);
 
         currentDialogueIndex = 0;
         currentDialogueSegmentIndex = 0;
         UpdateDialogueText();
+    }
+    IEnumerator DeathIntermission()
+    {
+        yield return new WaitForSeconds(1f);
+        dialogueBox.gameObject.SetActive(true);
     }
 }
