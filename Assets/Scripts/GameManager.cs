@@ -33,6 +33,13 @@ public class GameManager : MonoBehaviour
     [Header("Speed Dating")]
     [SerializeField] Transform dateSelectionScreen = null;
 
+    [Space]
+    [Header("Boss Fight")]
+    [SerializeField] Conversant deathConversantPreFight = null;
+    [SerializeField] Conversant deathConversantPosFight = null;
+    [SerializeField] Transform arena = null;
+    [SerializeField] Transform talkArea = null;
+
 
     GameState gameState;
     Conversant currentConversant;
@@ -130,11 +137,17 @@ public class GameManager : MonoBehaviour
                     return;
                 }
             }
+
+            currentDialogueIndex = 0;
+            currentDialogueSegmentIndex = 0;
+            currentConversant = deathConversantPreFight;
+            UpdateDialogueText();
             gameState = GameState.PreBossFight;
         }
         else if (gameState == GameState.PreBossFight)
         {
-            Debug.Log("Implement death talk before boss fight");
+            talkArea.gameObject.SetActive(false);
+            arena.gameObject.SetActive(true);
         }
     }
 
