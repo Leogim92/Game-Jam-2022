@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Lovecraft#2
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: Aight.
+    response: AND YET YOU BLATHER. THE KNOWLEDGE OF EONS WASTED ON A MIND INCAPABLE
+      OF PERCEIVING WHAT LIES OUTSIDE ITSELF. HUMAN CONSCIOUSNESS IS A TUMOROUS GROWTH
+      UNWILLING OF SELF-EXCISION.
+    pointTarget: 0
+  choice2:
+    choice: "Joke\u2019s on you, I\u2019m into that shit. Take me now!"
+    response: AND YET YOU BLATHER. THE KNOWLEDGE OF EONS WASTED ON A MIND INCAPABLE
+      OF PERCEIVING WHAT LIES OUTSIDE ITSELF. HUMAN CONSCIOUSNESS IS A TUMOROUS GROWTH
+      UNWILLING OF SELF-EXCISION.
+    pointTarget: 0
+  choice3:
+    choice: "YOU WANNA GO?! LET\u2019S FUCKIN\u2019 GO! I\u2019M FROM THE STREETS!"
+    response: AND YET YOU BLATHER. THE KNOWLEDGE OF EONS WASTED ON A MIND INCAPABLE
+      OF PERCEIVING WHAT LIES OUTSIDE ITSELF. HUMAN CONSCIOUSNESS IS A TUMOROUS GROWTH
+      UNWILLING OF SELF-EXCISION.
+    pointTarget: 0

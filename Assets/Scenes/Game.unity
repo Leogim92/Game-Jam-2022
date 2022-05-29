@@ -1030,7 +1030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &430778335
 Transform:
   m_ObjectHideFlags: 0
@@ -1104,7 +1104,161 @@ MonoBehaviour:
   speechSound: {fileID: 0}
   dialogues:
   - dialogueSegments:
-    - text: I'm a yasdasdas
+    - text: WASTING FLESH CLINGING YET TO WITHERED BONES. DO YOU NOT TIRE OF EXISTENCE,
+        TRIFFLING HUSK?
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "CREATURE OF FILTH AND FAULTS, CRUMBLE AT LAST, FOR YOU STAND BEFORE
+        YAGHRAZULB\u2019NYOVLATHETH, THE VOID AT THE END OF ALL THINGS."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 1fb7f4268a339f541bae963139062b2b, type: 2}
+  - dialogueSegments:
+    - text: YOU ARE BORN OF SLUSH, A SLURRY OF ORGANIC MATTER THAT CRAWLED OUT OF
+        A BOILING OCEAN TO SPREAD ITS SLIME ACROSS LANDS ONCE BLISSFULLY INERT.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: e31b9d755a2558949b96a58114d7efbb, type: 2}
+  - dialogueSegments:
+    - text: THUS I OFFER YOU THE GIFT OF OBLITERATION. BEHOLD MY-
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: ...
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: ...
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: ...
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 8b3a00866526ec44f9ae127804eba203, type: 2}
+  - dialogueSegments:
+    - text: "\u2018Ello, can you hear me?"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "I\u2019m in here, inside the Lovecraftian gentleman."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "Oh, but where are my manners? My name is Tim. I\u2019m pleased to make
+        your acquaintance."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 0a8e170b0dc9e8d4abe1ea9e40d01918, type: 2}
+  - dialogueSegments:
+    - text: "I would offer you a firm handshake, but I seem to be stuck inside the
+        body of my esteemed host Yaghrazulb\u2019Nyovlatheth."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "While I recognise my predicament, I must also admit it\u2019s quite
+        cosy in here, notwithstanding a few Escherian irregularities\u2026"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "I would even say that there\u2019s a certain je ne sais quois to this
+        cul-de-sac. It is very chic. I would love a cup of tea, of course, but\u2026
+        C\u2019est la vie."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 0a18728af1045bb43b0394b178d98aca, type: 2}
+  - dialogueSegments:
+    - text: "It all started one rainy day in London. I woke up, didn\u2019t brush
+        my teeth, and decided to go eat my favourite lunch: oily fish and unseasoned
+        vegetables boiled to mush."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "On the way to my repast, I passed by a bar. Due to my British alcoholism,
+        I could not resist stopping for a pint. I approached the bartender and said:
+        \u201CDear sir, could I trouble you for a pint?\u201D"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "Alas, I could not. The bartender slumped onto the bar, blood streaming
+        between his freckles\u2026 He had been glassed by an American man. One who
+        goes by the name of\u2026"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: bfa11c8366d9ced45bc96a8207b5e436, type: 2}
+  - dialogueSegments:
+    - text: Only then did I see the carnage. Todd Howard had murdered everyone in
+        the bar. Blood seeped into my overpriced Oxford shoes made in a Cambodian
+        sweat shop.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: I fled the scene as quick as my inferior British musculature allowed.
+        But when I crossed the street, I slipped on a copy of our most acclaimed
+        newspaper, the Daily Mail.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "I lay there, staring at the overcast sky. Rain fell on me like Earl
+        Grey tea. And Todd Howard was gaining ground\u2026"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: Then a double decker ran me over.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: f766264527a25264194fef00d8362937, type: 2}
+  - dialogueSegments:
+    - text: As I lay dying, I drew a pentagram with my own blood and a drop of milk.
+        I pledged my soul in exchange for retribution against Todd Howard.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "And then Yaghrazulb\u2019Nyovlatheth descended from the furthest reaches
+        of outer space and swallowed me whole."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 5b6c69714dd19124dbefe79f1353491c, type: 2}
+  - dialogueSegments:
+    - text: THE MAN IS FUCKING MENTAL. HE BEAT ME HALF TO DEATH THEN SAT ON ME AND
+        MADE ME WATCH HIM PLAY SKYRIM ON HIS SMARTWATCH.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "DON\u2019T MAKE ME SPEAK OF THIS ANYMORE. IT MAKES ME SAD. I MUST GO
+        HOME NOW AND CRY. COME, TIM!"
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
@@ -1847,11 +2001,6 @@ MonoBehaviour:
       onDialogueSegmentUpdate:
         m_PersistentCalls:
           m_Calls: []
-    - text: Yeah! Have you tried them?
-      isPlayer: 0
-      onDialogueSegmentUpdate:
-        m_PersistentCalls:
-          m_Calls: []
     - text: Yes.
       isPlayer: 1
       onDialogueSegmentUpdate:
@@ -2035,8 +2184,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 46.332, y: -391}
-  m_SizeDelta: {x: -578.32, y: -913.6483}
+  m_AnchoredPosition: {x: 46.33203, y: -329.6769}
+  m_SizeDelta: {x: -578.32, y: -791.0021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &631631819
 MonoBehaviour:
@@ -2051,15 +2200,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 3d1719f7959bf864a9fc3cb2b686ad90, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2776,8 +2925,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ->
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
+  m_sharedMaterial: {fileID: -4587741837020533292, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2801,8 +2950,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2840,7 +2989,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &885141394
@@ -3155,7 +3304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1237.574, y: -64.80395}
+  m_AnchoredPosition: {x: 1193, y: -132}
   m_SizeDelta: {x: 160, y: 129.6079}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925293229
@@ -3234,8 +3383,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 102b70ec49f845049a02b5e17ec86bdb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4381,7 +4530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1237.574, y: -64.80395}
+  m_AnchoredPosition: {x: 1180, y: -138}
   m_SizeDelta: {x: 160, y: 129.6079}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1257132762
@@ -4460,8 +4609,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 102b70ec49f845049a02b5e17ec86bdb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4526,18 +4675,13 @@ MonoBehaviour:
   speechSound: {fileID: 0}
   dialogues:
   - dialogueSegments:
-    - text: "Okay, time\u2019s over."
+    - text: How did it go? Has your mind been shattered by Eldritch knowledge yet?
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
           m_Calls: []
-    - text: "Hope you had fun talking to DJ Dipshit over here. (You\u2019d be the
-        first, though.)"
-      isPlayer: 0
-      onDialogueSegmentUpdate:
-        m_PersistentCalls:
-          m_Calls: []
-    - text: "Now let\u2019s go meet your next date\u2026"
+    - text: "Rhetorical question, I don\u2019t care. It\u2019s time to choose your
+        next date."
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
@@ -5319,7 +5463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.6254, y: -64.526855}
+  m_AnchoredPosition: {x: -13.625427, y: -64.526886}
   m_SizeDelta: {x: -88.4193, y: -168.2268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464840478
@@ -5405,10 +5549,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next
+  m_text: ->
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
+  m_sharedMaterial: {fileID: -4587741837020533292, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5432,8 +5576,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6440,13 +6584,6 @@ MonoBehaviour:
       onDialogueSegmentUpdate:
         m_PersistentCalls:
           m_Calls: []
-    - text: "Shush. Your potential paramours are all here already. One tip before
-        we begin: don\u2019t try to pander to them. Be true to yourself, even if
-        your self is absolutely useless."
-      isPlayer: 0
-      onDialogueSegmentUpdate:
-        m_PersistentCalls:
-          m_Calls: []
     - text: Now, who would you like to meet first?
       isPlayer: 0
       onDialogueSegmentUpdate:
@@ -6733,8 +6870,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 46.332, y: -391}
-  m_SizeDelta: {x: -578.32, y: -913.6483}
+  m_AnchoredPosition: {x: 46.33203, y: -329.6769}
+  m_SizeDelta: {x: -578.32, y: -791.0021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854258508
 MonoBehaviour:
@@ -6749,15 +6886,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 3d1719f7959bf864a9fc3cb2b686ad90, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6942,8 +7079,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 566.734, y: -83}
-  m_SizeDelta: {x: 1133.468, y: 132.5322}
+  m_AnchoredPosition: {x: 673, y: -132}
+  m_SizeDelta: {x: 799.8706, y: 132.5322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1870062635
 MonoBehaviour:
@@ -6965,17 +7102,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You won!
+  m_text: Victory
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
+  m_sharedMaterial: {fileID: -4587741837020533292, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282335039
+  m_fontColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6992,14 +7129,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 150
+  m_fontSizeBase: 150
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7502,7 +7639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1939994787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7645,10 +7782,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next
+  m_text: Try again..
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
+  m_sharedMaterial: {fileID: -4587741837020533292, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7672,8 +7809,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7756,8 +7893,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 566.734, y: -83}
-  m_SizeDelta: {x: 1133.468, y: 132.5322}
+  m_AnchoredPosition: {x: 681, y: -140}
+  m_SizeDelta: {x: 817.8586, y: 132.5322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975178023
 MonoBehaviour:
@@ -7781,15 +7918,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: You Lost!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
+  m_sharedMaterial: {fileID: -4587741837020533292, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282335039
+  m_fontColor: {r: 0.24705882, g: 0.24705882, b: 0.24705882, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7806,14 +7943,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 150
+  m_fontSizeBase: 150
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Lovecraft#7
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: "At least it wasn\u2019t a triple decker."
+    response: I still died in excruciating pain.
+    pointTarget: 0
+  choice2:
+    choice: '*Fap fap fap*'
+    response: I would ask you to refrain from pleasuring yourself while I talk about
+      my violent death.
+    pointTarget: 0
+  choice3:
+    choice: YEAH! GO BUS!
+    response: The wheels crushed my legs and pushed my knees into my eye sockets.
+    pointTarget: 0
