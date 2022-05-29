@@ -13,4 +13,13 @@ public class Pontuation : MonoBehaviour
         Otis,
         Lorena
     }
+
+    public void RevealDate()
+    {
+        //Reveal Date
+    }
+    public void ShowLastScene()
+    {
+        LoadingManager.LoadLastScene();
+    }
 }

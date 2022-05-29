@@ -11,7 +11,13 @@ public class BossController : MonoBehaviour, IDamageable
     [SerializeField] Transform downAttackPosition = null;
     [SerializeField] float attackRate = 2f;
 
+    float originalHp;
+    public float BossHP => bossHp;
 
+    private void Awake()
+    {
+        originalHp = bossHp;
+    }
     IEnumerator Start()
     {
         while(bossHp > 0)
@@ -40,6 +46,10 @@ public class BossController : MonoBehaviour, IDamageable
 
     public void TakeDamage(float damage)
     {
-        bossHp -= damage;
+        bossHp = Mathf.Max(0, bossHp - damage);
+    }
+    public void Heal()
+    {
+        bossHp = originalHp;
     }
 }

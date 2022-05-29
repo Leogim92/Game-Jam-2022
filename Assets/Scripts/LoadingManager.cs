@@ -37,9 +37,9 @@ public class LoadingManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
     }
 
-    public static void LoadScene(string sceneToLoad)
+    public static void LoadLastScene()
     {
-        loadingManager.StartCoroutine(LoadSceneAsync(sceneToLoad));
+        loadingManager.StartCoroutine(LoadSceneAsync("Epilogue"));
     }
     static IEnumerator LoadSceneAsync(string sceneToLoad)
     {

@@ -19,15 +19,18 @@ public class PlayerController : MonoBehaviour, IDamageable
     Rigidbody2D rb;
 
     float attackTimer;
+    float originalHp;
+
+    public float Health => health;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        originalHp = health;
     }
     private void Update()
     {
         if(health <= 0)
         {
-            Debug.Log("GameOver");
             return;
         }
         if(Input.GetKeyDown(KeyCode.UpArrow) && OnGround())
@@ -74,6 +77,10 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
+        health = Mathf.Max(0, health - damage);
+    }
+    public void Heal()
+    {
+        health = originalHp;
     }
 }

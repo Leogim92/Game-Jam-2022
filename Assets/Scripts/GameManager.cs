@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
         SpeedDating,
         DeathIntermission,
         PreBossFight,
-        BossFight,
         PosBossFight
     }
 
@@ -39,7 +38,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] Conversant deathConversantPosFight = null;
     [SerializeField] Transform arena = null;
     [SerializeField] Transform talkArea = null;
-
 
     GameState gameState;
     Conversant currentConversant;
@@ -149,6 +147,12 @@ public class GameManager : MonoBehaviour
             talkArea.gameObject.SetActive(false);
             arena.gameObject.SetActive(true);
         }
+        else if(gameState == GameState.PosBossFight)
+        {
+            talkArea.gameObject.SetActive(false);
+            FindObjectOfType<Pontuation>().RevealDate();
+        }
+
     }
 
     private void UpdateDialogueText()
@@ -198,5 +202,16 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         dialogueBox.gameObject.SetActive(true);
         UpdateDialogueText();
+    }
+    public void RevealDate()
+    {
+        arena.gameObject.SetActive(false);
+        talkArea.gameObject.SetActive(true);
+
+        currentDialogueIndex = 0;
+        currentDialogueSegmentIndex = 0;
+        currentConversant = deathConversantPosFight;
+        UpdateDialogueText();
+        gameState = GameState.PosBossFight;
     }
 }

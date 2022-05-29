@@ -12,16 +12,11 @@ public class Cutscene : MonoBehaviour
     private void Awake()
     {
         cutscene = GetComponent<PlayableDirector>();
-        cutscene.stopped += EndCutscene;
     }
 
     IEnumerator Start()
     {
         yield return LoadingManager.FadeIn();
         cutscene.Play();
-    }
-    private void EndCutscene(PlayableDirector obj)
-    {
-        LoadingManager.LoadScene(sceneToLoad);
     }
 }
