@@ -1,9 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour, IDamageable
 {
+    enum PlayerStates
+    {
+        Idle,
+        Jump,
+        Crouch,
+        Attack
+    }
+
     [SerializeField] float health = 100f;
     [SerializeField] Transform feetPosition = null;
     [SerializeField] LayerMask groundLayer = default;
@@ -15,16 +24,22 @@ public class PlayerController : MonoBehaviour, IDamageable
     [Space]
     [SerializeField] Projectile projectile = null;
     [SerializeField] Transform attackPosition = null;
-    [SerializeField] float attackRate = 0.5f;
+    [SerializeField] float attackRate = 0.3f;
+
+    PlayerStates playerState = PlayerStates.Idle;
+
     Rigidbody2D rb;
+    Animator animator;
 
     float attackTimer;
     float originalHp;
 
+    float timeInAttack;
     public float Health => health;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         originalHp = health;
     }
     private void Update()
@@ -33,32 +48,64 @@ public class PlayerController : MonoBehaviour, IDamageable
         {
             return;
         }
-        if(Input.GetKeyDown(KeyCode.UpArrow) && OnGround())
+
+        if(playerState == PlayerStates.Idle)
         {
-            rb.AddForce(Vector2.up * jumpForce);
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                rb.AddForce(Vector2.up * jumpForce);
+                animator.SetBool("Jump", true);
+
+                playerState = PlayerStates.Jump;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                animator.SetBool("Crouch", true);
+                normalCollider.gameObject.SetActive(false);
+                crouchCollider.gameObject.SetActive(true);
+
+                playerState = PlayerStates.Crouch;
+            }
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
+                animator.SetTrigger("Attack");
+                Instantiate(projectile, attackPosition.position, Quaternion.identity);
+
+                playerState = PlayerStates.Attack;
+            }
+
         }
-        else if(Input.GetKey(KeyCode.DownArrow) && OnGround())
+        else if(playerState == PlayerStates.Jump)
         {
-            normalCollider.gameObject.SetActive(false);
-            crouchCollider.gameObject.SetActive(true);
+            if(rb.velocity.y < 0 && OnGround())
+            {
+                animator.SetBool("Jump", false);
+                playerState = PlayerStates.Idle;
+            }
         }
-        else if(Input.GetKeyUp(KeyCode.DownArrow) && OnGround())
+        else if(playerState == PlayerStates.Crouch)
         {
-            normalCollider.gameObject.SetActive(true);
-            crouchCollider.gameObject.SetActive(false);
+            if (Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                animator.SetBool("Crouch", false);
+                normalCollider.gameObject.SetActive(true);
+                crouchCollider.gameObject.SetActive(false);
+
+                playerState = PlayerStates.Idle;
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else if(playerState == PlayerStates.Attack)
         {
+            attackTimer += Time.deltaTime;
             if (attackTimer >= attackRate)
             {
                 attackTimer = 0;
-                Instantiate(projectile, attackPosition.position, Quaternion.identity);
+
+                playerState = PlayerStates.Idle;
             }
         }
-
-        attackTimer += Time.deltaTime;
-
     }
+
 
     private bool OnGround()
     {
