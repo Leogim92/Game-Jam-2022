@@ -149,13 +149,12 @@ public class GameManager : MonoBehaviour
         }
         else if (gameState == GameState.PreBossFight)
         {
-            talkArea.gameObject.SetActive(false);
-            arena.gameObject.SetActive(true);
+            StartFight();
         }
         else if(gameState == GameState.PosBossFight)
         {
             talkArea.gameObject.SetActive(false);
-            FindObjectOfType<Pontuation>().RevealDate();
+            FindObjectOfType<Pontuation>().RevealDate(out string name, out Sprite background);
         }
 
     }
@@ -232,6 +231,17 @@ public class GameManager : MonoBehaviour
 
         dialogueBox.gameObject.SetActive(true);
         UpdateDialogueText();
+    }
+    private void StartFight()
+    {
+        StartCoroutine(FightStarter());
+    }
+    private IEnumerator FightStarter()
+    {
+        yield return LoadingManager.FadeOut();
+        talkArea.gameObject.SetActive(false);
+        arena.gameObject.SetActive(true);
+        yield return LoadingManager.FadeIn();
     }
     public void RevealDate()
     {
