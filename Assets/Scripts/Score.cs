@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pontuation : MonoBehaviour
+public class Score : MonoBehaviour
 {
     [SerializeField] Sprite hughman = null;
     [SerializeField] Sprite hipothetica = null;
@@ -50,8 +50,11 @@ public class Pontuation : MonoBehaviour
                 break;
         }
     }
-    public void RevealDate(out string characterName, out Sprite background)
+    public Sprite RevealDate()
     {
+        string characterName;
+        Sprite background;
+        
         int dateWinner = Mathf.Max(hughmanPoints, hipotheticaPoints, lovecraftThingiePoints, otisPoints, lorenaPoints);
         if(dateWinner == hughmanPoints)
         {
@@ -83,7 +86,7 @@ public class Pontuation : MonoBehaviour
             characterName = "Lorena Leeches";
             background = lorena;
         }
-
+        return background;
     }
     public void ShowLastScene()
     {

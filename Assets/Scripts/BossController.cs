@@ -29,7 +29,6 @@ public class BossController : MonoBehaviour, IDamageable
             }
             ShootProjectile();
         }
-        Debug.Log("Win");
     }
 
     private void ShootProjectile()

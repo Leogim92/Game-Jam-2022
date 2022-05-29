@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
         SpeedDating,
         DeathIntermission,
         PreBossFight,
-        PosBossFight
+        PosBossFight,
+        DateReveal
     }
 
     [SerializeField] Image background = null;
@@ -41,10 +42,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform arena = null;
     [SerializeField] Transform talkArea = null;
 
+    [Space]
+    [Header("Date Reveal")]
+    [SerializeField] Conversant deathRevealDate = null;
+
     GameState gameState;
     Conversant currentConversant;
     Conversant deathIntermission;
-    AudioSource audioSource;
+    
 
     int currentDialogueIndex = 0;
     int currentDialogueSegmentIndex = 0;
@@ -52,7 +57,6 @@ public class GameManager : MonoBehaviour
     bool inResponse;
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
         gameState = GameState.Intro;
         currentConversant = deathConversantIntro;
     }
@@ -153,10 +157,17 @@ public class GameManager : MonoBehaviour
         }
         else if(gameState == GameState.PosBossFight)
         {
-            talkArea.gameObject.SetActive(false);
-            FindObjectOfType<Pontuation>().RevealDate(out string name, out Sprite background);
+            UpdateBackground(FindObjectOfType<Score>().RevealDate());
+            currentDialogueIndex = 0;
+            currentDialogueSegmentIndex = 0;
+            currentConversant = deathRevealDate;
+            UpdateDialogueText();
+            gameState = GameState.DateReveal;
         }
-
+        else if(gameState == GameState.DateReveal)
+        {
+            LoadingManager.LoadLastScene();
+        }
     }
 
     private void UpdateDialogueText()
@@ -245,6 +256,12 @@ public class GameManager : MonoBehaviour
     }
     public void RevealDate()
     {
+        StartCoroutine(DateRevealer());
+    }
+    private IEnumerator DateRevealer()
+    {
+        dialogueBox.gameObject.SetActive(false);
+        yield return LoadingManager.FadeOut();
         arena.gameObject.SetActive(false);
         talkArea.gameObject.SetActive(true);
 
@@ -253,5 +270,8 @@ public class GameManager : MonoBehaviour
         currentConversant = deathConversantPosFight;
         UpdateDialogueText();
         gameState = GameState.PosBossFight;
+
+        yield return LoadingManager.FadeIn();
+        dialogueBox.gameObject.SetActive(true);
     }
 }

@@ -13,9 +13,9 @@ public class PlayerChoiceUI : MonoBehaviour
     }
     public void SetChoiceResponse()
     {
-        if(choice.pointTarget != Pontuation.PointTarget.None)
+        if(choice.pointTarget != Score.PointTarget.None)
         {
-            FindObjectOfType<Pontuation>().AddPoints(choice.pointTarget);
+            FindObjectOfType<Score>().AddPoints(choice.pointTarget);
         }
         FindObjectOfType<GameManager>().SetResponseText(choice.response);
     }

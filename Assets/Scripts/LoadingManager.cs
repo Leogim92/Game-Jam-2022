@@ -57,5 +57,6 @@ public class LoadingManager : MonoBehaviour
             }
             yield return new WaitForEndOfFrame();
         }
+        yield return FadeIn();
     }
 }
