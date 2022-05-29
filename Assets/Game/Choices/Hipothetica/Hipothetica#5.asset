@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Hipothetica#5
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: I would talk to animals and teach them about social justice.
+    response: You believe wasting time on Twitter posting unoriginal, safe opinions
+      makes you a good person.
+    pointTarget: 0
+  choice2:
+    choice: I would continuously pepper spray myself and become a superhero.
+    response: "You are desperate for an ounce of acknowledgement that you exist,
+      but you just can\u2019t seem to get people to care."
+    pointTarget: 0
+  choice3:
+    choice: I would eat all the animals, and then decide.
+    response: "You only watch the kind of porn that makes other people stare at their
+      computer screens in numb regret after they\u2019re done."
+    pointTarget: 0

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Hipothetica#2
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: I would not have sex with the goat. Rumours are ephemeral, necrophiliac
+      bestiality is eternal.
+    response: You are a true stoic. Your favourite abdominal exercise is the plank
+      and your favourite beverage is tap water.
+    pointTarget: 0
+  choice2:
+    choice: I would make sweet love to the goat, foreplay included.
+    response: You are a degenerate, but you feel true love towards people, and dead
+      farm animals.
+    pointTarget: 0
+  choice3:
+    choice: I would fuck the goat and then tell everybody. IDGAF!
+    response: You have played a lot of Rimworld.
+    pointTarget: 0

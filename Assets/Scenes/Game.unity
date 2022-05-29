@@ -4116,18 +4116,13 @@ MonoBehaviour:
   speechSound: {fileID: 0}
   dialogues:
   - dialogueSegments:
-    - text: "Okay, time\u2019s over."
+    - text: "I bet you enjoyed that, talking about yourself\u2026 Is your narcissism
+        satisfied yet?"
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
           m_Calls: []
-    - text: "Hope you had fun talking to DJ Dipshit over here. (You\u2019d be the
-        first, though.)"
-      isPlayer: 0
-      onDialogueSegmentUpdate:
-        m_PersistentCalls:
-          m_Calls: []
-    - text: "Now let\u2019s go meet your next date\u2026"
+    - text: No matter, time to meet your next date slash victim.
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
@@ -6304,7 +6299,93 @@ MonoBehaviour:
   speechSound: {fileID: 0}
   dialogues:
   - dialogueSegments:
-    - text: I'm Dalai Karen
+    - text: Yes yes yes my new test subject. Sit, please sit. Oh, this is so exciting.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: We met during your life, but you would not remember that. The state of
+        decay suits you, I must say. You were of a mundane variety, when you were
+        alive.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 1dfbc91566666a94a9e3b49d2448c373, type: 2}
+  - dialogueSegments:
+    - text: "I am conducting a scientific study on behalf of the Department of Post-Mortem
+        Psychology of the University of Necrolisbon. We are studying how one\u2019s
+        personality changes after death and the amnesia that follows."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: It is very simple. I will ask you a series of simple questions, and you
+        will answer to the best of your limited ability. I will then tell you what
+        your answer means.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: Let us begin. Would you rather have intercourse with a dead goat, but
+        nobody finds out, or not have intercourse with a dead goat, but everyone
+        thinks you did?
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 9c21813ce3aa34d48ab3e646c5e93605, type: 2}
+  - dialogueSegments:
+    - text: 'Second question: you must fight an important religious figure to the
+        death. Who would you choose?'
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 4c420de4233a1c94b8d48610eeb2bb4b, type: 2}
+  - dialogueSegments:
+    - text: 'Third question: would you rather be able to give advice to your past
+        self, or ask advice from your future self?'
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: c080ae14bced51d498b774257f88afb0, type: 2}
+  - dialogueSegments:
+    - text: "Interesting\u2026 So far, your answers are exactly the same ones you
+        gave me while you were alive. But what does this mean?... I need more data."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: 'Fourth question, then: would you rather be able to talk to animals,
+        but they only say racist stuff, or be able to fly, but only while crying?'
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: f792b76853f26d947b9cedab11b702da, type: 2}
+  - dialogueSegments:
+    - text: "I have a fifth and last question for you\u2026 This is the most important
+        one. Please answer honestly."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: If you could travel back in time, would you kill baby Hitler?
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 6e88861f9d2c9ae408b1471cee4350cc, type: 2}
+  - dialogueSegments:
+    - text: "I will need to ask you 8314 more questions to be completely sure\u2026"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: Ah, I see Death is coming. It seems our date is over. Thank you for your
+        time.
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
