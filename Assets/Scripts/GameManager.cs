@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     GameState gameState;
     Conversant currentConversant;
     Conversant deathIntermission;
+    AudioSource audioSource;
 
     int currentDialogueIndex = 0;
     int currentDialogueSegmentIndex = 0;
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
     bool inResponse;
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         gameState = GameState.Intro;
         currentConversant = deathConversantIntro;
     }
@@ -113,7 +115,6 @@ public class GameManager : MonoBehaviour
             currentDialogueIndex = 0;
             currentDialogueSegmentIndex = 0;
             currentConversant = deathIntermission;
-            UpdateDialogueText();
             StartCoroutine(DeathIntermission());
             gameState = GameState.DeathIntermission;
         }
@@ -140,6 +141,9 @@ public class GameManager : MonoBehaviour
     private void UpdateDialogueText()
     {
         dialogueText.text = currentConversant.GetDialogue(currentDialogueIndex).GetDialogueSegment(currentDialogueSegmentIndex).text;
+
+        currentConversant.GetDialogue(currentDialogueIndex).GetDialogueSegment(currentDialogueSegmentIndex).onDialogueSegmentUpdate?.Invoke();
+        audioSource.PlayOneShot(currentConversant.SpeechSound);
     }
     private void InstantiateChoice(Choice choice)
     {
@@ -180,5 +184,6 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         dialogueBox.gameObject.SetActive(true);
+        UpdateDialogueText();
     }
 }

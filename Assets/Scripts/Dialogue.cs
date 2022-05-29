@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class Dialogue 
@@ -9,6 +10,7 @@ public class Dialogue
     {
         [TextArea] public string text;
         public bool isPlayer;
+        public UnityEvent onDialogueSegmentUpdate = null;
     }
 
     [SerializeField] List<DialogueSegment> dialogueSegments = null;

@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Conversant : MonoBehaviour
 {
-    [SerializeField] AIBio aiBio = null;
+    [SerializeField] string conversantName = null;
+    [SerializeField] Sprite conversationBackground = null;
+    [SerializeField] AudioClip speechSound = null;
     [SerializeField] List<Dialogue> dialogues = null;
 
-    public AIBio AIBio => aiBio;
+    public AudioClip SpeechSound { get => speechSound; }
+
 
     public Dialogue GetDialogue(int index)
     {

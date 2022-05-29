@@ -15,5 +15,5 @@ public class Choice
 {
     [TextArea] public string choice = null;
     [TextArea] public string response = null;
-    public AIBio pontuationTarget = null;
+    public Pontuation.PointTarget pointTarget = Pontuation.PointTarget.None;
 }

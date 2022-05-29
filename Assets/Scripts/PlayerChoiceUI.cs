@@ -13,7 +13,7 @@ public class PlayerChoiceUI : MonoBehaviour
     }
     public void SetChoiceResponse()
     {
-        if(choice.pontuationTarget != null)
+        if(choice.pointTarget != Pontuation.PointTarget.None)
         {
             //Give pontuation
         }
