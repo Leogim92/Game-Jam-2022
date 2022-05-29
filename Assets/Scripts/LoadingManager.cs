@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,6 +42,7 @@ public class LoadingManager : MonoBehaviour
     {
         loadingManager.StartCoroutine(LoadSceneAsync("Epilogue"));
     }
+
     static IEnumerator LoadSceneAsync(string sceneToLoad)
     {
         yield return FadeOut();

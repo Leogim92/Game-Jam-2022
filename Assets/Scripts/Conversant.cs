@@ -9,7 +9,9 @@ public class Conversant : MonoBehaviour
     [SerializeField] AudioClip speechSound = null;
     [SerializeField] List<Dialogue> dialogues = null;
 
-    public AudioClip SpeechSound { get => speechSound; }
+    public string ConversantName => conversantName;
+    public AudioClip SpeechSound => speechSound;
+    public Sprite ConversationBackground => conversationBackground;
 
 
     public Dialogue GetDialogue(int index)

@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
         PosBossFight
     }
 
+    [SerializeField] Image background = null;
+    [SerializeField] TextMeshProUGUI talkerName = null;
     [SerializeField] Transform dialogueBox = null;
     [SerializeField] TextMeshProUGUI dialogueText = null;
     [Space]
@@ -55,8 +57,12 @@ public class GameManager : MonoBehaviour
         currentConversant = deathConversantIntro;
     }
 
-    private void Start()
+    IEnumerator Start()
     {
+        dialogueBox.gameObject.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        yield return LoadingManager.FadeIn();
+        dialogueBox.gameObject.SetActive(true);
         UpdateDialogueText();
     }
 
@@ -100,7 +106,10 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
+    public void UpdateBackground(Sprite sprite)
+    {
+        background.sprite = sprite;
+    }
     private void HandleEndConversation()
     {
         if (gameState == GameState.Intro)
@@ -116,10 +125,6 @@ public class GameManager : MonoBehaviour
         }
         else if (gameState == GameState.SpeedDating)
         {
-            dialogueBox.gameObject.SetActive(false);
-            currentDialogueIndex = 0;
-            currentDialogueSegmentIndex = 0;
-            currentConversant = deathIntermission;
             StartCoroutine(DeathIntermission());
             gameState = GameState.DeathIntermission;
         }
@@ -157,10 +162,20 @@ public class GameManager : MonoBehaviour
 
     private void UpdateDialogueText()
     {
-        dialogueText.text = currentConversant.GetDialogue(currentDialogueIndex).GetDialogueSegment(currentDialogueSegmentIndex).text;
+        Dialogue.DialogueSegment dialogueSegment = currentConversant.GetDialogue(currentDialogueIndex).GetDialogueSegment(currentDialogueSegmentIndex);
+        dialogueText.text = dialogueSegment.text;
 
-        currentConversant.GetDialogue(currentDialogueIndex).GetDialogueSegment(currentDialogueSegmentIndex).onDialogueSegmentUpdate?.Invoke();
-        audioSource.PlayOneShot(currentConversant.SpeechSound);
+        dialogueSegment.onDialogueSegmentUpdate?.Invoke();
+        
+
+        if (dialogueSegment.isPlayer)
+        {
+            talkerName.text = "Player";
+        }
+        else
+        {
+            talkerName.text = currentConversant.ConversantName;
+        }
     }
     private void InstantiateChoice(Choice choice)
     {
@@ -187,19 +202,34 @@ public class GameManager : MonoBehaviour
     }
     public void StartDate(Conversant newDate, Conversant deathIntermission)
     {
+        StartCoroutine(DateStart(newDate, deathIntermission));
+    }
+    private IEnumerator DateStart(Conversant newDate, Conversant deathIntermission)
+    {
+        dateSelectionScreen.gameObject.SetActive(false);
+        yield return LoadingManager.FadeOut();
         currentConversant = newDate;
         this.deathIntermission = deathIntermission;
-
-        dateSelectionScreen.gameObject.SetActive(false);
-        dialogueBox.gameObject.SetActive(true);
-
         currentDialogueIndex = 0;
         currentDialogueSegmentIndex = 0;
+        UpdateBackground(currentConversant.ConversationBackground);
+        yield return LoadingManager.FadeIn();
+
+        dialogueBox.gameObject.SetActive(true);
         UpdateDialogueText();
     }
+
     IEnumerator DeathIntermission()
     {
-        yield return new WaitForSeconds(1f);
+        dialogueBox.gameObject.SetActive(false);
+
+        yield return LoadingManager.FadeOut();
+        currentDialogueIndex = 0;
+        currentDialogueSegmentIndex = 0;
+        currentConversant = deathIntermission;
+        UpdateBackground(currentConversant.ConversationBackground);
+        yield return LoadingManager.FadeIn();
+
         dialogueBox.gameObject.SetActive(true);
         UpdateDialogueText();
     }
