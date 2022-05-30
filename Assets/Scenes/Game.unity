@@ -1299,7 +1299,7 @@ MonoBehaviour:
             m_MethodName: PlayOneShot
             m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 7ac027b1c8477f54abdadf9b966caf48, type: 3}
+              m_ObjectArgument: {fileID: 8300000, guid: e3674c53b7707d749a7451bbff90c450, type: 3}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
@@ -1331,7 +1331,7 @@ MonoBehaviour:
             m_MethodName: PlayOneShot
             m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 1a3aed21574e2f146a3a25e3f67b6363, type: 3}
+              m_ObjectArgument: {fileID: 8300000, guid: 233c8f74077d5ef4fb0bfde79c981ddb, type: 3}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
@@ -1353,7 +1353,7 @@ MonoBehaviour:
             m_MethodName: PlayOneShot
             m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 7ac027b1c8477f54abdadf9b966caf48, type: 3}
+              m_ObjectArgument: {fileID: 8300000, guid: e3674c53b7707d749a7451bbff90c450, type: 3}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
@@ -1397,7 +1397,7 @@ MonoBehaviour:
             m_MethodName: PlayOneShot
             m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 8300000, guid: 7ac027b1c8477f54abdadf9b966caf48, type: 3}
+              m_ObjectArgument: {fileID: 8300000, guid: e3674c53b7707d749a7451bbff90c450, type: 3}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
@@ -1455,7 +1455,19 @@ MonoBehaviour:
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 430873410}
+            m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+            m_MethodName: PlayOneShot
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 8300000, guid: 233c8f74077d5ef4fb0bfde79c981ddb, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     - text: Then a double decker ran me over.
       isPlayer: 0
       onDialogueSegmentUpdate:
@@ -1468,7 +1480,19 @@ MonoBehaviour:
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 430873410}
+            m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+            m_MethodName: PlayOneShot
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 8300000, guid: e3674c53b7707d749a7451bbff90c450, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     - text: "And then Yaghrazulb\u2019Nyovlatheth descended from the furthest reaches
         of outer space and swallowed me whole."
       isPlayer: 0
@@ -1482,7 +1506,19 @@ MonoBehaviour:
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 430873410}
+            m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+            m_MethodName: PlayOneShot
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 8300000, guid: 233c8f74077d5ef4fb0bfde79c981ddb, type: 3}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     - text: "DON\u2019T MAKE ME SPEAK OF THIS ANYMORE. IT MAKES ME SAD. I MUST GO
         HOME NOW AND CRY. COME, TIM!"
       isPlayer: 0
@@ -1915,7 +1951,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0d5fda18bef53be4c9491de4a139c355, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3abe09b995c77c4094f3a8dd9b88061, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6404,7 +6440,7 @@ MonoBehaviour:
   speechSound: {fileID: 0}
   dialogues:
   - dialogueSegments:
-    - text: Oh nevermind it seems you've met everyone.
+    - text: Wait, that was the last one? Good, I want to go home to my cat.
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
@@ -7993,8 +8029,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -665, y: 446}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -672, y: 358}
+  m_SizeDelta: {x: 296.2916, y: 181.3068}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1859647765
 CanvasRenderer:
@@ -8026,8 +8062,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 100
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
+  m_sharedMaterial: {fileID: -4587741837020533292, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8051,8 +8087,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 250
+  m_fontSizeBase: 250
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9497,8 +9533,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 300
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
+  m_sharedMaterial: {fileID: -4587741837020533292, guid: b240bf2a7e975b34aa2d3be7b0feda53, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9522,8 +9558,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 250
+  m_fontSizeBase: 250
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9588,8 +9624,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 840, y: 452}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 673, y: 353}
+  m_SizeDelta: {x: 353.1912, y: 194.4375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2134162799
 GameObject:
