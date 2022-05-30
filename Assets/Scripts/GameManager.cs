@@ -49,7 +49,8 @@ public class GameManager : MonoBehaviour
     GameState gameState;
     Conversant currentConversant;
     Conversant deathIntermission;
-    
+
+    AudioManager audioManager;
 
     int currentDialogueIndex = 0;
     int currentDialogueSegmentIndex = 0;
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
     bool inResponse;
     private void Awake()
     {
+        audioManager = FindObjectOfType<AudioManager>();
         gameState = GameState.Intro;
         currentConversant = deathConversantIntro;
     }
@@ -72,6 +74,7 @@ public class GameManager : MonoBehaviour
 
     public void NextButton()
     {
+        audioManager.PlayButtonSound();
         if (inResponse)
         {
             if (currentConversant.HasMoreDialogue(currentDialogueIndex))
@@ -218,6 +221,8 @@ public class GameManager : MonoBehaviour
     {
         dateSelectionScreen.gameObject.SetActive(false);
         yield return LoadingManager.FadeOut();
+        audioManager.SetMusic(AudioManager.Music.Bar);
+
         currentConversant = newDate;
         this.deathIntermission = deathIntermission;
         currentDialogueIndex = 0;
@@ -234,6 +239,7 @@ public class GameManager : MonoBehaviour
         dialogueBox.gameObject.SetActive(false);
 
         yield return LoadingManager.FadeOut();
+        audioManager.SetMusic(AudioManager.Music.Death);
         currentDialogueIndex = 0;
         currentDialogueSegmentIndex = 0;
         currentConversant = deathIntermission;
@@ -246,6 +252,7 @@ public class GameManager : MonoBehaviour
     private void StartFight()
     {
         StartCoroutine(FightStarter());
+        StartCoroutine(StartFightMusic());
     }
     private IEnumerator FightStarter()
     {
@@ -253,6 +260,13 @@ public class GameManager : MonoBehaviour
         talkArea.gameObject.SetActive(false);
         arena.gameObject.SetActive(true);
         yield return LoadingManager.FadeIn();
+    }
+    private IEnumerator StartFightMusic()
+    {
+        audioManager.StopBackgroundMusic();
+        audioManager.PlayFightIntro(out float duration);
+        yield return new WaitForSeconds(duration);
+        audioManager.SetMusic(AudioManager.Music.Fight);
     }
     public void RevealDate()
     {

@@ -33,6 +33,7 @@ public class LoadingManager : MonoBehaviour
     }
     public static IEnumerator FadeOut()
     {
+        FindObjectOfType<AudioManager>().PlayFadeSound();
         FadeLoader.SetBool("Fade", true);
         yield return new WaitForEndOfFrame();
         yield return new WaitForSeconds(2f);

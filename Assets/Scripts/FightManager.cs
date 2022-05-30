@@ -14,7 +14,13 @@ public class FightManager : MonoBehaviour
     [SerializeField] Transform winFightBox = null;
     [SerializeField] Transform loseFightBox = null;
 
+    AudioManager audioManager;
     bool fightDone;
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+    }
     private void Update()
     {
         playerHealth.text = player.Health.ToString();
@@ -31,15 +37,20 @@ public class FightManager : MonoBehaviour
             {
                 winFightBox.gameObject.SetActive(true);
                 fightDone = true;
+                audioManager.StopBackgroundMusic();
+                audioManager.PlayFightOutro();
             }
         }
     }
     public void WinFight()
     {
-        FindObjectOfType<GameManager>().RevealDate();
+        audioManager.PlayButtonSound();
+        FindObjectOfType<AudioManager>().SetMusic(AudioManager.Music.Death);
+        LoadingManager.LoadLastScene();
     }
     public void RestartFight()
     {
+        audioManager.PlayButtonSound();
         player.Heal();
         boss.Heal();
         loseFightBox.gameObject.SetActive(false);

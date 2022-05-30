@@ -13,6 +13,7 @@ public class PlayerChoiceUI : MonoBehaviour
     }
     public void SetChoiceResponse()
     {
+        FindObjectOfType<AudioManager>().PlayButtonSound();
         if(choice.pointTarget != Score.PointTarget.None)
         {
             FindObjectOfType<Score>().AddPoints(choice.pointTarget);
