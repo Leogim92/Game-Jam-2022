@@ -10,13 +10,20 @@ public class BossController : MonoBehaviour, IDamageable
     [SerializeField] Transform upAttackPosition = null;
     [SerializeField] Transform downAttackPosition = null;
     [SerializeField] float attackRate = 2f;
+    [Space]
+    [SerializeField] AudioClip attack = null;
 
     float originalHp;
+    Animator animator;
+    AudioSource audioSource;
     public float BossHP => bossHp;
+
 
     private void Awake()
     {
         originalHp = bossHp;
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
     IEnumerator Start()
     {
@@ -28,6 +35,9 @@ public class BossController : MonoBehaviour, IDamageable
                 break;
             }
             ShootProjectile();
+
+            audioSource.PlayOneShot(attack);
+            animator.SetTrigger("Attack");
         }
     }
 

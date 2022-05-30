@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour, IDamageable
     [SerializeField] Transform attackPosition = null;
     [SerializeField] float attackRate = 0.3f;
 
+    [Space]
+    [SerializeField] AudioClip crouch = null;
+    [SerializeField] AudioClip jump = null;
+    [SerializeField] AudioClip attack = null;
+
     PlayerStates playerState = PlayerStates.Idle;
 
     Rigidbody2D rb;
@@ -33,13 +38,15 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     float attackTimer;
     float originalHp;
+    AudioSource audioSource;
 
-    float timeInAttack;
     public float Health => health;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
         originalHp = health;
     }
     private void Update()
@@ -55,6 +62,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             {
                 rb.AddForce(Vector2.up * jumpForce);
                 animator.SetBool("Jump", true);
+                audioSource.PlayOneShot(jump);
 
                 playerState = PlayerStates.Jump;
             }
@@ -63,6 +71,7 @@ public class PlayerController : MonoBehaviour, IDamageable
                 animator.SetBool("Crouch", true);
                 normalCollider.gameObject.SetActive(false);
                 crouchCollider.gameObject.SetActive(true);
+                audioSource.PlayOneShot(crouch);
 
                 playerState = PlayerStates.Crouch;
             }
@@ -70,6 +79,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             {
                 animator.SetTrigger("Attack");
                 Instantiate(projectile, attackPosition.position, Quaternion.identity);
+                audioSource.PlayOneShot(attack);
 
                 playerState = PlayerStates.Attack;
             }

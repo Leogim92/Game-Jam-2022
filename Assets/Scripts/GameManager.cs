@@ -66,7 +66,6 @@ public class GameManager : MonoBehaviour
     IEnumerator Start()
     {
         dialogueBox.gameObject.SetActive(false);
-        yield return new WaitForSeconds(2f);
         yield return LoadingManager.FadeIn();
         dialogueBox.gameObject.SetActive(true);
         UpdateDialogueText();
