@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         backgroundMusic.Play();
+    }
+    public void UpdateVolume(Slider slider)
+    {
+        AudioListener.volume = slider.value;
     }
     public void SetMusic(Music music)
     {
