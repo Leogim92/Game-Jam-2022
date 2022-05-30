@@ -5460,7 +5460,195 @@ MonoBehaviour:
   speechSound: {fileID: 0}
   dialogues:
   - dialogueSegments:
-    - text: I'm Lorena
+    - text: Ugh.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: '?'
+      isPlayer: 1
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "Ugh\u2026 Really?"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: ???
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "Of all the people\u2026"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: What?
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "Ugh\u2026!"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: b451f034afb9e2340ba687e21ca68083, type: 2}
+  - dialogueSegments:
+    - text: UGH!
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 6395c6a441d22594b84acb3d6c48d4ed, type: 2}
+  - dialogueSegments:
+    - text: UGH!
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 26a0e0969e8fb8e4892164e8dc9e1635, type: 2}
+  - dialogueSegments:
+    - text: We met last week at my art gallery. A place right by the river Styx,
+        called Still Lifes. Do you remember?
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: No? Well, let me refresh your memory.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "It was the inauguration of my new photo collection: Sublime Remnants
+        \u2013 The Necrophagic Chirality of Gentrification Through the Looking Glass
+        of Neo-Soviet Brutalism."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "You\u2019d just come out of the welcome party for new arrivals. You
+        stumbled into my gallery\u2026 "
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "And immediately vomited on my pi\xE8ce de r\xE9sistance: The Autophagy
+        of the Self."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: Was that the photo of a disembowelled guy sucking on his own intestines?
+      isPlayer: 1
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: Yes. A lot of very rich people were interested in buying it. Even Todd
+        Howard bid on it, though he tried to pay with copies of Skyrim for Nintendo
+        Wii.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: It was my most acclaimed and expensive piece.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: It was my most acclaimed and expensive piece.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 693fe2ea748be144badad85f21f5181f, type: 2}
+  - dialogueSegments:
+    - text: Then Joe from security tried to escort you out, and do you remember what
+        you did?
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: e5c1d6c64c5f7f145b5059326d637be6, type: 2}
+  - dialogueSegments:
+    - text: "And then you\u2026"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 762a86b79c3a2cd45a9c59e73faf7f0c, type: 2}
+  - dialogueSegments:
+    - text: "So there was poor Joe, on all fours, vomiting uncontrollably, crying
+        and begging for death. And then\u2026"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 5f519a458d9f4d94380a89777106bc88, type: 2}
+  - dialogueSegments:
+    - text: "But more importantly\u2026 Everyone started clapping."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "They thought it was performance art. The Hipbone Gazette called it:
+        \u201CA bolero of bile that strikes a major chord\u201D."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "Death&Dijon said: \u201CLorena Leeches\u2019 gutsy duo performance challenges
+        us to crawl out of our oubliettes of self-obsession.\u201D"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "Snobbery Review called it: \u201Can outr\xE9 essay on the suppression
+        of our interior narratives.\u201D"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: What do you think?
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 2ef92670a1938ab4180433595ca0743e, type: 2}
+  - dialogueSegments:
+    - text: Uh, sure.
+      isPlayer: 1
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "It was the crowning moment of my career\u2026 And I didn\u2019t even
+        earn it."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: 'You ruined everything. Your puke performance completely overshadowed
+        all my other work. '
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "And the most painful thing is that you don\u2019t even remember it."
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: af22bf2e7caa1ca4d8c709330afd25e0, type: 2}
+  - dialogueSegments:
+    - text: "I just came here to tell you that I hate you\u2026 And I love you\u2026"
+      isPlayer: 1
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: Time will tell if you are my better half or my worst enemy. For now,
+        Death is coming. Farewell, my nightingale.
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
@@ -6541,18 +6729,13 @@ MonoBehaviour:
   speechSound: {fileID: 0}
   dialogues:
   - dialogueSegments:
-    - text: "Okay, time\u2019s over."
+    - text: "I\u2019m not even going to waste synaptic energy thinking about the
+        fuck I just heard."
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
           m_Calls: []
-    - text: "Hope you had fun talking to DJ Dipshit over here. (You\u2019d be the
-        first, though.)"
-      isPlayer: 0
-      onDialogueSegmentUpdate:
-        m_PersistentCalls:
-          m_Calls: []
-    - text: "Now let\u2019s go meet your next date\u2026"
+    - text: "Let\u2019s go meet your next date."
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Lorena#4
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: Soz, it just really moved me.
+    response: "Yes, I\u2019m sure it had nothing to do with you being high on Krokodil."
+    pointTarget: 0
+  choice2:
+    choice: I just wanted to show your friends how much I can vomit.
+    response: Well done. It somehow infiltrated the tiles and now we have to change
+      the floors.
+    pointTarget: 0
+  choice3:
+    choice: "I improved it. You\u2019re welcome."
+    response: "I admit that the consistency of your sick complemented the piece\u2019s
+      statement about the diseased nature of utilitarianism."
+    pointTarget: 0

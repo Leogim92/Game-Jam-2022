@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Lorena#8
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: "I\u2019d describe it as: \u201Ca chill reflection on the radness of
+      being dope\u201D."
+    response: A performative critique of the debasement of eastern philosophies by
+      western capitalists?
+    pointTarget: 0
+  choice2:
+    choice: "I see it as a: \u201Csensual fornication of our prolapsed selves\u201D."
+    response: The puke channeled from one person to another is an impressionistic
+      representation of how porn commodifies our sense of intimacy?
+    pointTarget: 0
+  choice3:
+    choice: "It\u2019s obviously a: \u201Cgory spectacle of big swords, erosion of
+      civil rights, and monster trucks\"."
+    response: "So it\u2019s a juxtaposition between our discomfort towards the content
+      of our own bodies and media-driven desensitisation of violence?"
+    pointTarget: 0

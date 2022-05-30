@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Lorena#2
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: Welp.
+    response: "Aren\u2019t you the best? So suave, so cool."
+    pointTarget: 0
+  choice2:
+    choice: Neat, right? Hottest corpse in the biz.
+    response: Whatever you say, pisshead.
+    pointTarget: 0
+  choice3:
+    choice: "\u201CUgh\u201D one more time and I\u2019ll punch you in the leeches."
+    response: Oh, hon, you can't do worse than you already did.
+    pointTarget: 0
