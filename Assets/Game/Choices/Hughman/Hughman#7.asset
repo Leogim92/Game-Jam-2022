@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Hughman#7
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: Like being late for work because you got high the previous night and
+      thought your room was full of landmines?
+    response: An apt, if worryingly specific example.
+    pointTarget: 0
+  choice2:
+    choice: Like sorting the vegetables in your pantry according to their potential
+      as sex toys?
+    response: An apt, if worryingly specific example.
+    pointTarget: 0
+  choice3:
+    choice: Like shanking your infant cousin with a copy of Tekken because the little
+      shit always picks Hwoarang and spams circle?
+    response: An apt, if worryingly specific example.
+    pointTarget: 0

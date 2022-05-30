@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Hughman#3
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: "I want somebody who\u2019ll sing to me the theme song from Halo when
+      I\u2019m feeling sad."
+    response: "Ooohhhhhhhhhh ohh oh ohh oohh oh ohhh ohhhhhhhhhh\u2026 DUN DUN DUN,
+      DUN DUN DUN!"
+    pointTarget: 0
+  choice2:
+    choice: "I usually look for signs of STDs. If they don\u2019t have any, then
+      they\u2019re not cool."
+    response: You will be pleased to know we are riddled with leptospirosis, toxoplasmosis
+      and chlamydia.
+    pointTarget: 0
+  choice3:
+    choice: I like people in vegetative state.
+    response: If we were opportunistic omnivore marsupials, we would share your preference
+      for inert, edible sources of meat.
+    pointTarget: 0

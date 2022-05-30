@@ -5707,7 +5707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.625427, y: -64.526886}
+  m_AnchoredPosition: {x: -13.625488, y: -64.526855}
   m_SizeDelta: {x: -88.4193, y: -168.2268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464840478
@@ -6462,7 +6462,118 @@ MonoBehaviour:
   speechSound: {fileID: 0}
   dialogues:
   - dialogueSegments:
-    - text: I'm Hughman
+    - text: We are pleased to meet with you this evening, fellow hominid.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: The corners of our human lips are raised in a gesture indicative of friendship,
+        perhaps even of desire to copulate.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 67ad5b0b8108133499ccd3171f49f5f7, type: 2}
+  - dialogueSegments:
+    - text: We will begin our pre-mating ritual by imparting some information about
+        us.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: When we were alive, we spent the majority of our time producing imaginary
+        value to the disproportionate benefit of a small elite who considered us
+        pathetic.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: We often contemplated terminating our lives, but we were kept afloat
+        by the constant stream of corporate-produced entertainment around which we
+        moulded our identities.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: We particularly enjoyed TV shows in which an object is given the uncertainty
+        principle of both being and not being a cake until the moment of revelation.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: Tell us, which human activities do you most enjoy?
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 6088596145b5dbb4a9465727aea290ac, type: 2}
+  - dialogueSegments:
+    - text: "We have another question of the clich\xE9d variety. What do you look
+        for in a romantic mate?"
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: f3d70435797510e4d99ab18c71a669b2, type: 2}
+  - dialogueSegments:
+    - text: We must say, your company is adequately tolerable. Therefore, before
+        we groom ourselves in preparation for breeding, we have a confession to make.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 6a5eb2fed7ef3bf4898e8d8a09c0df61, type: 2}
+  - dialogueSegments:
+    - text: As we have communicated multiple times by modulating sound waves through
+        our larynxes, we are a singular human being wearing unethically sourced garments
+        from evil multinational conglomerate Zara.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: We ask that you cease your verbal attacks, or we will vacate this establishment.
+        And we will not stop on the way home to scavenge food in garbage bins.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: 572e2b8a47fb1e940990b2917f8ee167, type: 2}
+  - dialogueSegments:
+    - text: We will stay, albeit we are nearing the state of fight or flight.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: But let us say, hypothetically, that we are indeed a group of dead opossums
+        inside a trench coat. What would you say is the reason we are undergoing
+        this covert operation?
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: b38e5ff527692e24bb93b576e7a3de16, type: 2}
+  - dialogueSegments:
+    - text: The truth is that humans, too, have made the afterlife inhospitable to
+        other beings.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: Plus, hypothetically, it would not be hard to acquire a trench coat.
+        The hard part would be learning how to enjoy certain human things.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    playerChoices: {fileID: 11400000, guid: ab1fa0aad2e46c14aa1009cf001c1e58, type: 2}
+  - dialogueSegments:
+    - text: We must go now, duty calls.
+      isPlayer: 0
+      onDialogueSegmentUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    - text: "And we must stress that \u201Cduty\u201D is not synonym with \u201Ceating
+        bugs and pooping on your shed.\u201D"
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
@@ -8497,18 +8608,13 @@ MonoBehaviour:
   speechSound: {fileID: 0}
   dialogues:
   - dialogueSegments:
-    - text: "Okay, time\u2019s over."
+    - text: What the hell is this smell? Did somebody double die in here?
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
           m_Calls: []
-    - text: "Hope you had fun talking to DJ Dipshit over here. (You\u2019d be the
-        first, though.)"
-      isPlayer: 0
-      onDialogueSegmentUpdate:
-        m_PersistentCalls:
-          m_Calls: []
-    - text: "Now let\u2019s go meet your next date\u2026"
+    - text: "Ah, I see you met with the opossums. Hold your zoophilia for a minute,
+        it\u2019s time for your next date."
       isPlayer: 0
       onDialogueSegmentUpdate:
         m_PersistentCalls:
@@ -8616,7 +8722,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 35.858337, y: -378.27625}
+  m_AnchoredPosition: {x: 35.8584, y: -378.27625}
   m_SizeDelta: {x: -400.2661, y: -756.5525}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2025341549

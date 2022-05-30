@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Hughman#5
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: Chill, my dude(s). Here, have some of my fries.
+    response: Fine. NOM NOM NOM!
+    pointTarget: 0
+  choice2:
+    choice: "Don\u2019t go! I can make it worth your while, hehe. *MOAN*"
+    response: We do not understand what you mean, but that terrifying sound is urging
+      us to play dead.
+    pointTarget: 0
+  choice3:
+    choice: "You\u2019re not going anywhere until I make sure you\u2019re not a furry."
+    response: We feel an obligation to defend the group of humans targeted by your
+      outdated prejudice towards innocent enjoyers of cartoon animals.
+    pointTarget: 0

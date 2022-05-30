@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
-  m_Name: Otis#1
+  m_Name: Hughman#4
   m_EditorClassIdentifier: 
   choice1:
-    choice: TMI, bro.
-    response: "Haha JK I\u2019m cut. Sweet caf\xE9 they got going on here innit? "
+    choice: "You\u2019re a group of dead opossums in a trench coat."
+    response: We vehemently deny your accusation.
     pointTarget: 0
   choice2:
-    choice: "It\u2019s cool, I love cheese."
-    response: "Haha JK I\u2019m cut. Sweet caf\xE9 they got going on here innit? "
+    choice: "You\u2019re a sexy group of dead opossums in a trench coat."
+    response: We vehemently deny your accusation.
     pointTarget: 0
   choice3:
-    choice: Get the fuck away from me.
-    response: "Haha JK I\u2019m cut. Sweet caf\xE9 they got going on here innit? "
+    choice: "You\u2019re a bitch group of dead furries in an opossum coat."
+    response: We vehemently deny your accusation.
     pointTarget: 0

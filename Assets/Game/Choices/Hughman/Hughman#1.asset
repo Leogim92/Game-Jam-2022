@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a077be853fef24eb813bd3c45fd065, type: 3}
+  m_Name: Hughman#1
+  m_EditorClassIdentifier: 
+  choice1:
+    choice: "Sup bromeo, how\u2019s it hangin\u2019?"
+    response: It is hanging limply, but it will become turgid and rise upwards under
+      conditions of arousal.
+    pointTarget: 0
+  choice2:
+    choice: You had me at copulate!
+    response: We must refuse for now. Otherwise you might judge us promiscuous and
+      harm our standing in society and thus our chances of survival.
+    pointTarget: 0
+  choice3:
+    choice: "Ah ffs, a furry\u2026"
+    response: We are not furry. Our body hair is of the human type and we often shave
+      it off, which apparently increases our sexual attractiveness.
+    pointTarget: 0
